@@ -5,6 +5,11 @@ window.addEventListener("load", () => {
     div.style.background = `hsl(${i}, 65%, 65%)`;
     div.style.transform = `translate(${Math.random() * 100}vw, ${Math.random() *
       100}vh)`;
+    div.addEventListener("mouseenter", e => {
+      div.style.background = `hsl(${i}, 70%, 70%)`;
+      div.style.transform = `translate(${Math.random() *
+        100}vw, ${Math.random() * 100}vh)`;
+    });
     body.appendChild(div);
   }
 });
