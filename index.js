@@ -8,3 +8,8 @@ window.addEventListener("load", () => {
     body.appendChild(div);
   }
 });
+function test() {
+  window.open("hello world");
+}
+
+test();
